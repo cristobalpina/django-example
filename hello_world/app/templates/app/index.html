@@ -1,0 +1,10 @@
+<h1>Hola {{name}}</h1>
+
+<p>Para inscribirte debes dejar tu correo</p>
+
+<form method="POST" action="/users"> 
+    {% csrf_token %}
+    <label>Correo:</label>
+    <input type="text" name="email" />
+    <input type="submit" value="Inscribirme"/>
+</form>

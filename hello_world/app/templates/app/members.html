@@ -1,0 +1,7 @@
+<h1>El correo {{email}} fue registrado con éxito!</h1>
+
+<ol>
+    {% for member in members %}
+    <li>{{member.email}}</li>
+    {% endfor %}
+</ol>
